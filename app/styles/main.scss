@@ -31,6 +31,7 @@ body {
 
 /* Custom page header */
 .header {
+  position: relative;
   background-color: $blue;
   margin:0px -15px;
   /* Make the masthead heading the same height as the navigation */
