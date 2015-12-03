@@ -3,16 +3,23 @@ $(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
-    items:1
+    items: 1
   })
-
-  $('.count-board h5,.lastest-update p').flowtype({
+  $('body').flowtype({
     minimum: 320,
-    maximum: 1200,
+    maximum: 640,
     minFont: 12,
-    maxFont: 40,
-    fontRatio : 30
+    maxFont: 35,
+    fontRatio: 30
 
   });
-
+  //
+  // $('.lastest-update p').flowtype({
+  //   minimum: 320,
+  //   maximum: 640,
+  //   minFont: 12,
+  //   maxFont: 40,
+  //   fontRatio : 30
+  //
+  // });
 });

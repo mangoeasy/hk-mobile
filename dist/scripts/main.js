@@ -1,1 +1,1 @@
-$(function(){$(".owl-carousel").owlCarousel({loop:!0,margin:0,items:1}),$(".count-board h5,.lastest-update p").flowtype({minimum:320,maximum:1200,minFont:12,maxFont:40,fontRatio:30})});
+$(function(){$(".owl-carousel").owlCarousel({loop:!0,margin:0,items:1}),$("body").flowtype({minimum:320,maximum:640,minFont:12,maxFont:35,fontRatio:30})});
