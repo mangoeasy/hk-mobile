@@ -1,5 +1,6 @@
 $icon-font-path: '../fonts/';
 $blue: #17295d;
+$deepBlue:#101e46;
 $yellow: #fef5aa;
 $deepYellow:#f1ad38;
 
@@ -18,13 +19,11 @@ body {
   padding-bottom: 20px;
 }
 .container {
-  margin: 0;
-  padding: 0;
+
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
-.count-board,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -33,6 +32,7 @@ body {
 /* Custom page header */
 .header {
   background-color: $blue;
+  margin:0px -15px;
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -79,16 +79,20 @@ body {
 /* count-board */
 .count-board {
   background-color: $yellow;
+  h5 {font-size: 1em; white-space: nowrap;}
   var {
     background-color:$deepYellow;
     margin: 0px 4px 0px 0px;
     padding: 5px 6px;
     font-style: normal;
+    border-radius: 5px;
   }
   .lastest-update {
     p{
       background-color: #fff;
       border:1px solid #f3b74f;
+      font-size: 12px;
+      padding: 5px;
     }
   }
 }
