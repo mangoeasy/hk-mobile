@@ -1,6 +1,6 @@
 $icon-font-path: '../fonts/';
 $blue: #17295d;
-$deepBlue: #101e46;
+$deepBlue: #17295d;
 $yellow: #fef5aa;
 $deepYellow: #f1ad38;
 $red: #d83423;
@@ -20,12 +20,9 @@ $red: #d83423;
 body {
   padding-bottom: 20px;
 }
-.container {
 
-}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -74,12 +71,14 @@ body {
 .count-board {
   background-color: $yellow;
   h5 {
+    color: $deepBlue;
     font-size: 1.2em;
-    padding: 5px 0px;
+    padding: 5px 0;
     white-space: nowrap;
   }
   var {
     font-size: 1.2em;
+    color: $deepBlue;
     background-color: $deepYellow;
     font-weight: bold;
     margin: 0 1px;
@@ -98,11 +97,9 @@ body {
     align-items: center;
     align-content: center;
   }
-
 }
 .lastest-update {
   background-color: $yellow;
-
   i {
     display: inline-block;
     max-width: 200px;
@@ -112,7 +109,7 @@ body {
     white-space: nowrap;
     background-color: #fff;
     border: 1px solid #f3b74f;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 0.5em;
     display: flex;
     flex-direction: row;
@@ -120,7 +117,7 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    b{
+    b {
       font-weight: normal;
     }
   }
@@ -128,11 +125,26 @@ body {
 .lastest-offer {
   background-color: $red;
   color: #fff;
-  padding: 10px 0;
+  padding: 0.5em 0;
   button {
-    background: #ffe519;
     border: none;
-    @include button-variant(#cece19, #000000, #2dbe27);
+    color: #d83422;
+    -moz-box-shadow: inset 0 3px 0 #fff;
+    -webkit-box-shadow: inset 0 3px 0 #fff;
+    box-shadow: inset 0 3px 0 #fff;
+    border-bottom: 3px solid #85160b;
+    font-weight: bold;
+    font-size: 2.1em;
+    padding: 2px 11px;
+    @include button-variant(#d83422, #ffe519, #a64d0f);
+  }
+  h5 {
+    line-height: 2.4em;
+    font-size: 1.2em;
+    margin: 0;
+    i {
+      font-style: normal;
+    }
   }
   b {
     font-size: 2em;
@@ -140,7 +152,29 @@ body {
 }
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 0;
+  .box-title {
+    background-color: $blue;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.8em;
+    margin: 0.8em 0em;
+    &:after {
+      top: 90%;
+      left: 10%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(23, 41, 93, 0);
+      border-top-color: $blue;
+      border-width: 15px;
+      margin-left: -15px;
+    }
+  }
   p + h4 {
     margin-top: 28px;
   }
