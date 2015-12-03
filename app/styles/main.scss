@@ -3,7 +3,7 @@ $blue: #17295d;
 $deepBlue:#101e46;
 $yellow: #fef5aa;
 $deepYellow:#f1ad38;
-
+$red:#d83423;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -94,6 +94,19 @@ body {
       border:1px solid #f3b74f;
       font-size: 12px;
       padding: 5px;
+    }
+  }
+  .lastest-offer {
+    background-color: $red;
+    color:#fff;
+    padding: 10px 0px;
+    button{
+      background: #ffe519;
+      border:none;
+    }
+    b{
+      font-size: 2em;
+
     }
   }
 }
