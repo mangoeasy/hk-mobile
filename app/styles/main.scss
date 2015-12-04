@@ -184,6 +184,35 @@ body {
     font-size: 2em;
   }
 }
+.grey-block,.yellow-block {
+  padding: 1.5em 0;
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+.grey-block {
+  background-color: #dedede!important;
+  p{
+    color:$deepBlue;
+  }
+  mark {
+    color: #d33e33;
+    background: transparent;
+  }
+}
+.yellow-block {
+  background-color:#ffe519!important;
+  ol {
+    padding-left: 1.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  p,li{
+    color:#d83423;
+    margin:0px;
+  }
+}
 /* Supporting marketing content */
 .marketing {
   background-color: #fbfbfb;
