@@ -3,7 +3,7 @@ $blue: #17295d;
 $deepBlue: #17295d;
 $yellow: #fef5aa;
 $deepYellow: #f1ad38;
-$red: #d83423;
+$red: #d83422;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -231,36 +231,103 @@ body {
   .col-xs-3 { margin: 10px 0px ; padding: 2px;}
 }
 /* Supporting marketing content */
+.box-title {
+  background-color: $blue;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  padding: 0.8em;
+  margin: 0.8em 0em;
+  &:after {
+    top: 90%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(23, 41, 93, 0);
+    border-top-color: $blue;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  &.pull-left {
+    font-size: 1.2em;
+
+    &:after {
+      left:25%;
+    }
+  }
+}
+.model-select {
+  h2 {
+    color:$red;
+    font-size: 2em;
+  }
+  .radio {
+    //border-bottom: 1px solid #c2c2c2;
+  }
+
+  .options{
+    font-size: 1.2em;
+    border-top: 1px solid #c2c2c2;
+
+    .row {
+      border-bottom: 1px solid #c2c2c2;
+    }
+    label {
+      padding-left: 22px;
+      color:$deepBlue;
+      display: block;
+
+    }
+    b {
+      color:$red;
+      float: right;
+    }
+    .radio {
+      padding: 0px 15px;
+    }
+  }
+
+  .user-info {
+    margin-top: 3em;
+    label {
+      font-size: 1.3em;
+      line-height: 1.6em;
+    }
+
+    .custom-tips{
+      border-bottom: none;
+      margin-bottom: 1.5em;
+
+      p{
+        padding: 0px;
+        margin: 0px;
+        font-size: 1em;
+        line-height: 1em;
+      }
+
+
+    }
+  }
+  .btn {
+    background-color: $red;
+    border:none;
+  }
+}
+
 .marketing {
   background-color: #fbfbfb;
   margin: 0;
-  .box-title {
-    background-color: $blue;
-    position: relative;
-    color: #fff;
-    font-size: 1em;
-    padding: 0.8em;
-    margin: 0.8em 0em;
-    &:after {
-      top: 90%;
-      left: 10%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(23, 41, 93, 0);
-      border-top-color: $blue;
-      border-width: 10px;
-      margin-left: -10px;
-    }
-  }
+
 
   p + h4 {
     margin-top: 28px;
   }
 }
+
 .full-screen {
   margin: 0px -15px;
 }
