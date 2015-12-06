@@ -1,4 +1,3 @@
-$(function() {
 
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -13,13 +12,3 @@ $(function() {
     fontRatio: 30
 
   });
-  //
-  // $('.lastest-update p').flowtype({
-  //   minimum: 320,
-  //   maximum: 640,
-  //   minFont: 12,
-  //   maxFont: 40,
-  //   fontRatio : 30
-  //
-  // });
-});
