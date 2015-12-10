@@ -2,7 +2,9 @@
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
-    items: 1
+    items: 1,
+    autoplay:true,
+    autoplay : 2000
   })
   $('body').flowtype({
     minimum: 320,

@@ -38,7 +38,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
+    padding-bottom: 10px;
   }
   .brand {
     width: 140px;
@@ -288,6 +288,12 @@ body {
       color:$deepBlue;
       display: block;
 
+    }
+    i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #000;
     }
     b {
       color:$red;
