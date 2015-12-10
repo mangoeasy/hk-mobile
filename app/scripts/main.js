@@ -14,4 +14,4 @@ $('body').flowtype({
 
 });
 
-$('.count-board').scrollToFixed();
+$('.count-board-last-update').scrollToFixed();
