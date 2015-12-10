@@ -340,7 +340,15 @@ body {
     margin-top: 28px;
   }
 }
-
+.fix-top{
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 999;
+  width: 100%;
+  margin: 0px;
+  background-color: rgba(254, 245, 170, 0.82);
+}
 .full-screen {
   margin: 0px -15px;
 }
