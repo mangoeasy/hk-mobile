@@ -1,1 +1,1 @@
-$(".owl-carousel").owlCarousel({loop:!0,margin:0,items:1,autoplay:!0,autoplay:2e3}),$("body").flowtype({minimum:320,maximum:640,minFont:12,maxFont:35,fontRatio:30}),$(".count-board-last-update").scrollToFixed();
+$(".owl-carousel").owlCarousel({loop:!0,margin:0,items:1,autoplay:!0,autoplay:2e3}),$("body").flowtype({minimum:320,maximum:640,minFont:12,maxFont:35,fontRatio:30}),$(".count-board-last-update").scrollToFixed(),$(".carousel").carousel({interval:2e3});

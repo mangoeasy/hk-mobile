@@ -15,3 +15,7 @@ $('body').flowtype({
 });
 
 $('.count-board-last-update').scrollToFixed();
+
+$('.carousel').carousel({
+    interval: 2000
+  });
